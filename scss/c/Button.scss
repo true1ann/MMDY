@@ -1,0 +1,52 @@
+@use '../vars' as *;
+@use 'sass:map';
+
+.button {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    border: none;
+    border-radius: 100vh;
+    padding: map.get($spacings, 2) map.get($spacings, 3);
+    text-decoration: none;
+    &:disabled, &.disabled {
+        background-color: var(--md-sys-color-on-surface);
+        color: var(--md-sys-color-surface);
+        pointer-events: none;
+    }
+    &:hover:not(:disabled):not(.disabled) {
+        filter: brightness(1.05);
+    }
+    &:active:not(:disabled):not(.disabled) {
+        filter: brightness(1.08);
+    }
+
+    &.elevated {
+        background-color: var(--md-sys-color-on-primary-container);
+        color: var(--md-sys-color-primary);
+        box-shadow: map.get($elevations, 1);
+        transition: box-shadow 0.5s;
+        &:hover:not(:disabled):not(.disabled) {
+            box-shadow: map.get($elevations, 2);
+        }
+        &:active:not(:disabled):not(.disabled) {
+            box-shadow: map.get($elevations, 1);
+        }
+    }
+
+    &.outlined {
+        background-color: transparent;
+        border: 1px solid var(--md-sys-color-outline-variant);
+        color: var(--md-sys-color-primary);
+        &:hover:not(:disabled):not(.disabled) {
+            background-color: rgba(var(--md-sys-color-primary), 0.5);
+        }
+    }
+
+    &.text {
+        background-color: transparent;
+        color: var(--md-sys-color-primary);
+        &:hover:not(:disabled):not(.disabled) {
+            background-color: rgba(var(--md-sys-color-primary), 0.5);
+        }
+    }
+}
