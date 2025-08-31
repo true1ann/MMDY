@@ -1,0 +1,35 @@
+@use '../vars' as *;
+@use 'sass:map';
+
+.buttongroup {
+    display: flex;
+    flex-direction: row;
+    gap: map.get($spacings, 1);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 100vh;
+    overflow: hidden;
+    &:has(.button.toggle) > .button{
+        background-color: var(--mmdy-color-container);
+        color: var(--mmdy-on-color-container);
+        &[mmdy-state=on], &:active {
+            border-radius: 1.2rem;
+            background-color: var(--mmdy-color);
+            color: var(--mmdy-on-color);
+            width: 125%;
+        }
+        &[mmdy-state=off] {
+            border-radius: 0.6rem;
+        }
+    }
+    & > .button {
+        width: 100%;
+        transition: width 0.25s, border-radius 0.25s;
+        border-radius: 0.6rem;
+        &:active {
+            width: 150%;
+            border-radius: 1.2rem;
+        }
+    }
+}

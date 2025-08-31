@@ -1,0 +1,7 @@
+@use '../vars' as *;
+
+@each $n, $s in $spacings {
+    .gap-#{$n} {
+        gap: $s !important;
+    }
+}

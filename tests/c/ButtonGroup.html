@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMDY Button Groups</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" href="/css/roboto.css">
+</head>
+<body>
+    <div>
+        <div class="buttongroup"><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button></div>
+        <div class="buttongroup"><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button><button class="button toggle" mmdy-state="off" onclick="this.setAttribute('mmdy-state', this.getAttribute('mmdy-state')=== 'on' ? 'off' : 'on')">Toggle Button</button></div>
+    </div>
+    <div class="secondary">
+        <div class="buttongroup"><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button></div>
+        <div class="buttongroup"><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button><button class="button toggle" mmdy-state="off" onclick="this.setAttribute('mmdy-state', this.getAttribute('mmdy-state')=== 'on' ? 'off' : 'on')">Toggle Button</button></div>
+    </div>
+    <div class="tertiary">
+        <div class="buttongroup"><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button></div>
+        <div class="buttongroup"><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button><button class="button toggle" mmdy-state="off" onclick="this.setAttribute('mmdy-state', this.getAttribute('mmdy-state')=== 'on' ? 'off' : 'on')">Toggle Button</button></div>
+    </div>
+    <div class="error">
+        <div class="buttongroup"><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button></div>
+        <div class="buttongroup"><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button><button class="button toggle" mmdy-state="off" onclick="this.setAttribute('mmdy-state', this.getAttribute('mmdy-state')=== 'on' ? 'off' : 'on')">Toggle Button</button></div>
+    </div>
+    <div class="buttongroup gap-5"><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button><button class="button">Button</button></div>
+</body>
+</html>

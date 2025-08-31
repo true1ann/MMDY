@@ -10,6 +10,8 @@ Test: [tests/c/Button.html](/tests/c/Button.html)
 
 ## Explanation
 
+[M3 Source](https://m3.material.io/components/buttons)
+
 `<insert base button style image>`
 
 Class: `button`; Subclasses: `.disabled`, `.elevated`, `.outlined`, `.text`; Modifier classes: `.toggle`
