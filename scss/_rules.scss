@@ -1,0 +1,11 @@
+body {
+    background-color: var(--md-sys-color-background);
+    color: var(--md-sys-color-on-background);
+}
+
+:root {
+    --mmdy-color: var(--md-sys-color-primary);
+    --mmdy-on-color: var(--md-sys-color-on-primary);
+    --mmdy-color-container: var(--md-sys-color-primary-container);
+    --mmdy-on-color-container: var(--md-sys-color-on-primary-container);
+}

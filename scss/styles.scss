@@ -1,8 +1,5 @@
 @use 'reboot';
+@use 'rules';
 @use 'u/fontsizes';
+@use 'u/colors';
 @use 'c/Button';
-
-body {
-    background-color: var(--md-sys-color-background);
-    color: var(--md-sys-color-on-background);
-}

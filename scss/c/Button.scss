@@ -2,8 +2,8 @@
 @use 'sass:map';
 
 .button {
-    background-color: var(--md-sys-color-primary);
-    color: var(--md-sys-color-on-primary);
+    background-color: var(--mmdy-color);
+    color: var(--mmdy-on-color);
     border: none;
     border-radius: 100vh;
     padding: map.get($spacings, 2) map.get($spacings, 3);
@@ -21,8 +21,8 @@
     }
 
     &.elevated {
-        background-color: var(--md-sys-color-on-primary-container);
-        color: var(--md-sys-color-primary);
+        background-color: var(--mmdy-color-container);
+        color: var(--mmdy-color);
         box-shadow: map.get($elevations, 1);
         transition: box-shadow 0.5s;
         &:hover:not(:disabled):not(.disabled) {
@@ -36,17 +36,27 @@
     &.outlined {
         background-color: transparent;
         border: 1px solid var(--md-sys-color-outline-variant);
-        color: var(--md-sys-color-primary);
+        color: var(--mmdy-color);
         &:hover:not(:disabled):not(.disabled) {
-            background-color: rgba(var(--md-sys-color-primary), 0.5);
+            background-color: rgba(var(--mmdy-color), 0.5);
         }
     }
 
     &.text {
         background-color: transparent;
-        color: var(--md-sys-color-primary);
+        color: var(--mmdy-color);
         &:hover:not(:disabled):not(.disabled) {
-            background-color: rgba(var(--md-sys-color-primary), 0.5);
+            background-color: rgba(var(--mmdy-color), 0.5);
+        }
+    }
+
+    &.toggle {
+        transition: border-radius 0.25s;
+        &[mmdy-state="on"] {
+            border-radius: 0.6rem;
+        }
+        &[mmdy-state="off"] {
+            border-radius: 1.2rem;
         }
     }
 }

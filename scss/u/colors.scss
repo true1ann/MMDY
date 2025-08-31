@@ -1,0 +1,18 @@
+$priority: primary, secondary, tertiary, error;
+
+@each $p in $priority {
+	.#{$p} {
+		--mmdy-color: var(--md-sys-color-#{$p});
+		--mmdy-on-color: var(--md-sys-color-on-#{$p});
+		--mmdy-color-container: var(--md-sys-color-#{$p}-container);
+		--mmdy-on-color-container: var(--md-sys-color-on-#{$p}-container);
+	}
+}
+
+
+// Usually, we have a structure like
+//   --md-sys-color-primary: rgb(255 204 199);
+//   --md-sys-color-on-primary: rgb(87 29 26);
+//   --md-sys-color-primary-container: rgb(255 164 156);
+//   --md-sys-color-on-primary-container: rgb(122 55 51);
+// So its pretty easy to just do this
