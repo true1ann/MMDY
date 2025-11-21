@@ -1,9 +1,9 @@
 # MMDY/Docs/U/fontsizes
 
-## Files
+## Sources
 
-Source: [scss/u/fontsizes.scss](/scss/u/fontsizes.scss)
-Test: [tests/c/Headers.html](/tests/c/Headers.html)
+[scss/u/fontsizes.scss](/scss/u/fontsizes.scss) - SCSS Theme  
+[See Demo](https://ann.is-a.dev/MMDY/tests/c/Headers.html) - See real-world usages  
 
 ## Explanation
 

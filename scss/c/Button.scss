@@ -37,6 +37,9 @@
         background-color: transparent;
         border: 1px solid var(--md-sys-color-outline-variant);
         color: var(--mmdy-color);
+        &.color {
+            --md-sys-color-outline-variant: var(--mmdy-color);
+        }
         &:hover:not(:disabled):not(.disabled) {
             background-color: rgba(var(--mmdy-color), 0.5);
         }

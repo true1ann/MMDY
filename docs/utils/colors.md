@@ -1,8 +1,8 @@
 # MMDY/Docs/U/colors
 
-## Files
+## Sources
 
-Source: [scss/u/colors.scss](/scss/u/colors.scss)
+[scss/u/colors.scss](/scss/u/colors.scss) - SCSS Theme  
 
 ## Explanation
 

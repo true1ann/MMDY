@@ -1,8 +1,8 @@
-# MMDY/Docs//
+# MMDY/Docs/U/gaps
 
-## Files
+## Sources
 
-Source: [scss/u/gaps.scss](/scss/u/gaps.scss)
+[scss/u/gaps.scss](/scss/u/gaps.scss) - SCSS Theme  
 
 ## Explanation
 
