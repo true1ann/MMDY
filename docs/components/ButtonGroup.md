@@ -11,10 +11,8 @@
 
 ## Overview
 
-Base class:  
-Special classes:  
-Theme classes:  
-Accepted elements:
+Base class: `.buttongroup`  
+Accepted elements: `<div>`
 
 ## Usage
 

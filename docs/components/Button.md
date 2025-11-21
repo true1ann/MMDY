@@ -14,7 +14,7 @@
 Base class: `button`  
 Special classes: `.disabled`, `.toggle`  
 Theme classes: `.elevated`, `.text`, `.outlined` (+`.color`)  
-Accepted elements: `a`, `button`
+Accepted elements: `<a>`, `<button>`
 
 ## Usage
 
@@ -39,5 +39,3 @@ Removes button background
 ### `.outlined`
 
 Is basically a `.text` button with an outline. Use `.color` to change the outline color to the accent color
-
-`<insert button styles images>`
