@@ -3,6 +3,10 @@ body {
     color: var(--md-sys-color-on-background);
 }
 
+* {
+    font-size: 16px;
+}
+
 :root {
     --mmdy-color: var(--md-sys-color-primary);
     --mmdy-on-color: var(--md-sys-color-on-primary);

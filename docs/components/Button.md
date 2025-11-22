@@ -13,7 +13,7 @@
 
 Base class: `button`  
 Special classes: `.disabled`, `.toggle`  
-Theme classes: `.elevated`, `.text`, `.outlined` (+`.color`)  
+Theme classes: `.elevated`, `.text`, `.outlined` (+`.color`), `sm`-`xlg`, `w1`, `w-1`  
 Accepted elements: `<a>`, `<button>`
 
 ## Usage
@@ -38,4 +38,12 @@ Removes button background
 
 ### `.outlined`
 
-Is basically a `.text` button with an outline. Use `.color` to change the outline color to the accent color
+Is basically a `.text` button with an outline. Also use `.color` to change the outline color to the accent color
+
+### Sizes
+
+You can apply sizes with classes: `xsm` (optional, default and omitted in the code), `sm`, `md`, `lg` and `xlg` for "Extra small", "Small", "Medium", "Large" and "Extra large" respectivelly
+
+### Widths
+
+Used mostly in Icon Buttons, you can use `w1` to add width, and `w-1` to remove some.

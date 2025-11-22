@@ -5,9 +5,22 @@
     background-color: var(--mmdy-color);
     color: var(--mmdy-on-color);
     border: none;
-    border-radius: 100vh;
-    padding: map.get($spacings, 2) map.get($spacings, 3);
+    border-radius: 1.2rem;
     text-decoration: none;
+    transition: box-shadow 0.5s, border-radius 0.25s;
+    --v-pad: #{map.get($spacings, 3)};
+    --h-pad: #{map.get($spacings, 2)};
+    --t-size: 16px;
+    font-size: var(--t-size);
+    padding: var(--h-pad) var(--v-pad);
+    & > .i {
+        font-size: map.get($fontsizes, 6);
+        margin-right: calc(var(--v-pad) / 2);
+    }
+    & > .ii {
+        margin-right: 0;
+    }
+
     &:disabled, &.disabled {
         background-color: var(--md-sys-color-on-surface);
         color: var(--md-sys-color-surface);
@@ -18,13 +31,23 @@
     }
     &:active:not(:disabled):not(.disabled) {
         filter: brightness(1.08);
+        border-radius: 0.4rem;
+    }
+
+    &.toggle {
+        transition: border-radius 0.25s;
+        &[mmdy-state="on"] {
+            border-radius: 0.6rem;
+        }
+        &[mmdy-state="off"] {
+            border-radius: 1.2rem;
+        }
     }
 
     &.elevated {
         background-color: var(--mmdy-color-container);
         color: var(--mmdy-color);
         box-shadow: map.get($elevations, 1);
-        transition: box-shadow 0.5s;
         &:hover:not(:disabled):not(.disabled) {
             box-shadow: map.get($elevations, 2);
         }
@@ -53,13 +76,37 @@
         }
     }
 
-    &.toggle {
-        transition: border-radius 0.25s;
-        &[mmdy-state="on"] {
-            border-radius: 0.6rem;
-        }
-        &[mmdy-state="off"] {
-            border-radius: 1.2rem;
-        }
+    &.sm {
+        --v-pad: #{map.get($spacings, 4)};
+        --h-pad: #{map.get($spacings, 3)};
+        --t-size: #{map.get($fontsizes, 5)};
+        border-radius: 1.5rem;
     }
+    &.md {
+        --v-pad: #{map.get($spacings, 5)};
+        --h-pad: #{map.get($spacings, 4)};
+        --t-size: #{map.get($fontsizes, 4)};
+        border-radius: 2.5rem;
+    }
+    &.lg {
+        --v-pad: #{map.get($spacings, 6)};
+        --h-pad: #{map.get($spacings, 5)};
+        --t-size: #{map.get($fontsizes, 3)};
+        border-radius: 3rem;
+    }
+    &.xlg {
+        --v-pad: #{map.get($spacings, 7)};
+        --h-pad: #{map.get($spacings, 6)};
+        --t-size: #{map.get($fontsizes, 2)};
+        border-radius: 3.5rem;
+    }
+
+    &.w1 {
+        padding: var(--h-pad) calc(var(--v-pad) / 0.75);
+    }
+
+    &.w-1 {
+        padding: var(--h-pad) calc(var(--v-pad) * 0.5);
+    }
+
 }
