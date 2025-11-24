@@ -17,7 +17,8 @@
     display: inline-block;
     white-space: nowrap;
     word-wrap: normal;
-    direction: ltr;
+    direction: ltr; 
+    font-feature-settings: "liga";
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
     transform: scale(1.2)
